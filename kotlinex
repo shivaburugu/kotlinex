@@ -1,0 +1,65 @@
+fun main(){
+
+    val companyName = "Cognizant"
+
+    /*val length = companyName.apply {
+        length
+    }
+    println("length is $length")*/
+
+
+    /*val result = companyName.let {
+        it.reversed()
+    }.let {
+        val reversed = it
+        reversed
+    }. let {
+        it.substring(0,5)
+        println("success")
+    }
+    println("result is $result")*/
+
+
+    /*val person = Person().apply {
+        firstName = "Shivakumar"
+        lastName = "Burugu"
+        age = 32
+        addrress = "Gachibowli"
+    }
+    println("person value is $person")*/
+
+
+   /*val name = companyName.apply {
+        plus(" private limited")
+    }
+    println("name value is $name")*/
+
+
+    /*val person = Person().run {
+        firstName = "Shivakumar"
+        lastName = "Burugu"
+        age = 32
+        addrress = "Gachibowli"
+    }
+    println("person is $person")*/
+
+
+    /*
+    Difference between with and run:
+    with is not an extension function
+    with is not a good option if the object is of nullable type, run is the best option for it*/
+
+    /*var person:Person? = getPerson()
+    with(person) {
+        this?.firstName = "Shivakumar"
+        this?.lastName   = "Burugu"
+        this?.age   = 32
+        this?.addrress  = "Gachibowli"
+    }
+    println("person is $person")*/
+
+}
+
+data class Person(var firstName:String = "", var lastName:String = "", var age:Int = 0, var addrress:String = "")
+
+fun getPerson() : Person = Person()
